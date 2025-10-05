@@ -22,8 +22,3 @@ def tinh_nguyen_lieu (sl_banh_dau_xanh, sl_banh_thap_cam, sl_banh_deo):
     nguyen_lieu_lam_banh["Dau"] = Dau_hop_banh
     return nguyen_lieu_lam_banh
 
-số_nguyên = (input("Nhập số nguyên  n: "))
-n = int(số_nguyên)
-số_nguyên = list(map(int, số_nguyên.split()))
-số_chẵn = list(filter(lambda x: x % 2 == 0, số_nguyên))
-print("Các số chẵn trong dãy là:", số_chẵn)
