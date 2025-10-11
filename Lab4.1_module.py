@@ -1,4 +1,4 @@
-# Sinh viên code Lab ở đây
+# sinh viên xây dựng các hàm trong lớp 4 ở đây
 def tinh_tien_nuoc(so_nuoc):
     gia_ban_nuoc = (7500, 8800, 12000, 24000)
     if so_nuoc <= 10 and so_nuoc >= 0:
@@ -23,3 +23,8 @@ def tinh_nguyen_lieu (sl_banh_dau_xanh, sl_banh_thap_cam, sl_banh_deo):
     nguyen_lieu_lam_banh["Dau"] = Dau_hop_banh
     return nguyen_lieu_lam_banh
 
+số_nguyên = (input("Nhập số nguyên  n: "))
+n = int(số_nguyên)
+số_nguyên = list(map(int, số_nguyên.split()))
+số_chẵn = list(filter(lambda x: x % 2 == 0, số_nguyên))
+print("Các số chẵn trong dãy là:", số_chẵn)

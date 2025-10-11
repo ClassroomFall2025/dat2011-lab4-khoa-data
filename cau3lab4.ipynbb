@@ -1,0 +1,5 @@
+số_nguyên = (input("Nhập số nguyên  n: "))
+n = int(số_nguyên)
+số_nguyên = list(map(int, số_nguyên.split()))
+số_chẵn = list(filter(lambda x: x % 2 == 0, số_nguyên))
+print("Các số chẵn trong dãy là:", số_chẵn)
